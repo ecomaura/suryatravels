@@ -1,0 +1,48 @@
+:root{--ink:#0e2433;--ink2:#17394f;--gold:#f2a900;--gold2:#ffd36b;--sky:#eaf3f8;--paper:#fbfcfd;--mut:#5b6b77;--wa:#1faa59;--r:18px}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{font-family:'Figtree',system-ui,sans-serif;color:var(--ink);background:var(--paper);line-height:1.65;font-size:17px}
+h1,h2,h3{font-family:'Bricolage Grotesque',serif;line-height:1.1;letter-spacing:-.02em}
+h1{font-size:clamp(2.4rem,6vw,4.4rem)}h2{font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:.6rem}h3{font-size:1.3rem;margin-bottom:.3rem}
+a{color:inherit}img{max-width:100%;display:block}
+.wrap{width:min(1180px,92%);margin:auto}.sec{padding:clamp(3.5rem,8vw,6.5rem) 0}.alt{background:var(--sky)}.dark{background:var(--ink);color:#fff}
+.lead{max-width:60ch;color:var(--mut)}.dark .lead{color:#b9cad6}.center{text-align:center}.center .lead{margin:auto}
+.btn{display:inline-flex;gap:.5rem;align-items:center;padding:.85rem 1.5rem;border-radius:99px;text-decoration:none;border:2px solid transparent;cursor:pointer;font:inherit;font-weight:700;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.b-gold{background:var(--gold);color:var(--ink)}.b-wa{background:var(--wa);color:#fff}.b-line{border-color:currentColor;color:inherit}
+header{position:sticky;top:0;z-index:50;background:rgba(14,36,51,.96);backdrop-filter:blur(8px);color:#fff}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{font-family:'Bricolage Grotesque';font-weight:800;font-size:1.3rem;text-decoration:none}.logo span{color:var(--gold)}
+nav ul{display:flex;gap:1.6rem;list-style:none;padding:0;align-items:center}nav a{text-decoration:none;font-weight:600;font-size:.97rem}nav a.on{color:var(--gold)}
+.burger{display:none;background:none;border:0;color:#fff;font-size:1.8rem}
+.hero{background:linear-gradient(120deg,var(--ink) 55%,var(--ink2));color:#fff;padding:clamp(3rem,7vw,6rem) 0 0;overflow:hidden}
+.hero .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:3rem;align-items:center}
+.hero p.lead{margin:1.2rem 0 2rem;font-size:1.15rem}.hero .cta{display:flex;gap:1rem;flex-wrap:wrap}
+.collage{display:grid;grid-template-columns:1fr 1fr;gap:14px;transform:rotate(2deg);padding-bottom:3rem}
+.collage .ph:first-child{grid-row:span 2}
+.ph{border-radius:var(--r);overflow:hidden;background:#cfdde6}.ph img{width:100%;height:100%;object-fit:cover}
+.strip{background:var(--gold);color:var(--ink)}.strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding:1.3rem 0;font-weight:700}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.6rem;margin-top:2.5rem}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.card{background:#fff;border-radius:var(--r);overflow:hidden;box-shadow:0 10px 30px rgba(14,36,51,.08);display:flex;flex-direction:column}
+.card .ph{border-radius:0;aspect-ratio:4/3}.card .body{padding:1.3rem 1.4rem 1.6rem;display:flex;flex-direction:column;gap:.5rem;flex:1}
+.card p{color:var(--mut);font-size:.97rem}.card .btn{margin-top:auto;align-self:flex-start;padding:.6rem 1.1rem;font-size:.92rem}
+.tag{font-size:.82rem;font-weight:700;color:var(--ink2);background:var(--sky);padding:.2rem .7rem;border-radius:99px;align-self:flex-start}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2.5rem;counter-reset:s}
+.steps div{border-top:4px solid var(--gold);padding-top:1rem;counter-increment:s}.steps div:before{content:counter(s);font:800 2.4rem 'Bricolage Grotesque';color:var(--gold)}
+.steps p{color:#b9cad6;font-size:.96rem}
+.checks{list-style:none;padding:0;margin:1.2rem 0 2rem;display:grid;gap:.7rem}.checks li:before{content:"✓";color:var(--wa);font-weight:800;margin-right:.6rem}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:14px;margin-top:2.5rem}.gal .ph:nth-child(1),.gal .ph:nth-child(6){grid-row:span 2}.gal .ph:nth-child(4){grid-column:span 2}
+details{background:#fff;border-radius:14px;padding:1.1rem 1.4rem;margin-top:.9rem;box-shadow:0 4px 14px rgba(14,36,51,.06)}summary{font-weight:700;cursor:pointer}details p{color:var(--mut);margin-top:.6rem}
+.cta-band{background:linear-gradient(120deg,var(--gold),var(--gold2));text-align:center}.cta-band .btn{margin-top:1.4rem}
+.pagehead{background:var(--ink);color:#fff;padding:4rem 0}.pagehead .lead{color:#b9cad6;margin-top:.8rem}
+form{display:grid;gap:1rem}label{font-weight:600;display:grid;gap:.35rem;font-size:.95rem}
+input,select,textarea{font:inherit;padding:.8rem 1rem;border:1.5px solid #c6d4de;border-radius:12px;background:#fff;width:100%}
+.info{display:grid;gap:1rem;margin-top:1.5rem}.info a{text-decoration:none;font-weight:600}
+footer{background:#08161f;color:#b9cad6;padding:3.5rem 0 1.5rem;font-size:.95rem}
+footer .cols{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:2rem}footer h3{color:#fff;font-size:1.05rem}footer ul{list-style:none;padding:0;display:grid;gap:.4rem}footer a{text-decoration:none}
+footer small{display:block;margin-top:2.5rem;border-top:1px solid #1d3444;padding-top:1.2rem}
+.fab{position:fixed;right:18px;bottom:18px;z-index:60;width:60px;height:60px;border-radius:50%;background:var(--wa);display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.3)}
+.fab svg{width:32px;fill:#fff}
+@media(max-width:900px){.hero .grid,.grid2{grid-template-columns:1fr}.grid3{grid-template-columns:1fr 1fr}.steps,.strip .wrap{grid-template-columns:1fr 1fr}.gal{grid-template-columns:1fr 1fr}.gal .ph:nth-child(4){grid-column:span 2}footer .cols{grid-template-columns:1fr}
+.burger{display:block}nav ul{display:none;position:absolute;left:0;right:0;top:72px;background:var(--ink);flex-direction:column;padding:1.5rem;gap:1.2rem}nav ul.open{display:flex}.collage{transform:none}}
+@media(max-width:560px){.grid3,.steps,.strip .wrap{grid-template-columns:1fr}body{font-size:16px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
